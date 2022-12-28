@@ -20,11 +20,10 @@ async function bootstrap() {
       resave: false,
       saveUninitialized: false,
       cookie: {
-        sameSite: 'lax',
-        // sameSite: 'none',
-        // secure: true,
+        sameSite: 'none',
+        secure: true,
         path: '/captcha',
-        maxAge: 1000 * 60 * 75, // 75 minutes
+        maxAge: 1000 * 60 * 90, // 90 minutes
       },
     }),
   );
